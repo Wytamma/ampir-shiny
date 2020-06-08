@@ -16,6 +16,7 @@ library(data.table)
 fileName <- 'little_test.fasta'
 
 ui <- fluidPage(
+  HTML("<h1>Antimicrobial peptide prediction with <a target='_blank' href='https://github.com/Legana/ampir'>ampir</a></h1>"),
   textAreaInput(
     "caption",
     "Enter FASTA",
@@ -23,7 +24,8 @@ ui <- fluidPage(
     height = "250px"
   ) %>%
     shiny::tagAppendAttributes(style = 'width: 100%;'),
-  DT::dataTableOutput("value")
+  DT::dataTableOutput("value"),
+  HTML("Source on <a target='_blank' href='https://github.com/Wytamma/ampir-shiny'>Github</a>"),
 )
 
 server <- function(input, output) {
