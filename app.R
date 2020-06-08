@@ -18,7 +18,7 @@ fileName <- 'little_test.fasta'
 ui <- fluidPage(
   HTML("<h1>Antimicrobial peptide prediction with <a target='_blank' href='https://github.com/Legana/ampir'>ampir</a></h1>"),
   textAreaInput(
-    "caption",
+    "fasta",
     "Enter FASTA",
     readChar(fileName, file.info(fileName)$size),
     height = "250px"
@@ -31,7 +31,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   output$value <- DT::renderDataTable({
     fil <- tempfile(fileext = ".data")
-    writeLines(input$caption, fil)
+    writeLines(input$fasta, fil)
     my_protein_df <- read_faa(fil)
     print(my_protein_df)
     my_prediction <-
