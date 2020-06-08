@@ -35,9 +35,9 @@ server <- function(input, output) {
     my_prediction <- predict_amps(my_protein_df, model = "precursor")
     setcolorder(my_prediction, c("seq_name", "prob_AMP", "seq_aa"))
     DT::datatable(my_prediction, options = list(
-      scrollX = TRUE,
-      scrollCollapse = TRUE
-    ))
+        scrollX = TRUE,
+        scrollCollapse = TRUE
+      ))
     })
 }
 

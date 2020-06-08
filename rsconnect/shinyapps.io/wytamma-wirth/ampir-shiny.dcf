@@ -1,0 +1,12 @@
+name: ampir-shiny
+title: ampir-shiny
+username:
+account: wytamma-wirth
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2423961
+bundleId: 3241213
+url: https://wytamma-wirth.shinyapps.io/ampir-shiny/
+when: 1591599710.5682
+asMultiple: FALSE
+asStatic: FALSE
