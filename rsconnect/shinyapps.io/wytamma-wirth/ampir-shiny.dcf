@@ -5,8 +5,8 @@ account: wytamma-wirth
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2423961
-bundleId: 3241213
+bundleId: 3241272
 url: https://wytamma-wirth.shinyapps.io/ampir-shiny/
-when: 1591599710.5682
+when: 1591600185.2014
 asMultiple: FALSE
 asStatic: FALSE
